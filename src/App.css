@@ -1,0 +1,226 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: "Permanent Marker", sans-serif;
+}
+
+/* badge start */
+
+.badge-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.square-badges,
+.pill-badges {
+  display: flex;
+  gap: 1em;
+}
+
+span {
+  display: block;
+  padding: 0.5em 1.5em;
+  font-family: "Inter", sans-serif;
+  font-size: 0.87rem;
+}
+
+.square {
+  border-radius: 4px;
+}
+
+.pill {
+  border-radius: 12px;
+}
+
+.gray {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.red {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.yellow {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.green {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.blue {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.indigo {
+  background-color: #e0e7ff;
+  color: #3730a3;
+}
+
+.purple {
+  background-color: #ede9fe;
+  color: #5b21b6;
+}
+
+.pink {
+  background-color: #fce7f3;
+  color: #9d174d;
+}
+
+/* badge end */
+
+/* banner start */
+
+.banner-section {
+  display: flex;
+  gap: 1em;
+}
+
+.banner-container-multiline,
+.banner-container-singleline {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.banner {
+  width: 56em;
+  padding: 1em;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 6px;
+}
+
+.banner .icon {
+  display: block;
+  height: 2em;
+  width: 2em;
+}
+
+.icon img {
+  width: 100%;
+  display: block;
+}
+
+.banner .information {
+  width: 59em;
+  font-family: "inter", sans-serif;
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  font-size: 0.875em;
+  align-items: start;
+  margin-left: 0.875em;
+}
+
+.banner .information h3,
+.banner .information p {
+  margin: 0;
+}
+
+/* banner end */
+
+/* card start */
+.card {
+  height: 13em;
+  width: 24em;
+  background-color: #f9fafb;
+  margin: 0 auto;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em 2em;
+  transition: all 300ms ease-in-out;
+}
+
+.card:hover {
+  filter: drop-shadow(0 0 0.5rem #ddd);
+}
+
+.card-icon {
+  position: absolute;
+  height: 3em;
+  width: 3em;
+  top: -1.5em;
+  background-color: #3f75fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 1.125rem;
+}
+
+.card-text {
+  width: 21em;
+  font-size: 1rem;
+  color: #6b7280;
+  margin-top: 1.25em;
+  text-align: center;
+}
+
+/* card end */
+
+/* Tesimonials start */
+
+.testimonial-card {
+  width: 84.875em;
+  height: 25em;
+  padding: 0 4em;
+  background-color: #2545b8;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.testi-image {
+  width: 24em;
+  height: 29em;
+  position: relative;
+}
+
+.testi-image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 1em;
+  left: 0;
+}
+
+.testi-text {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+  width: 50em;
+  margin-left: 1em;
+}
+
+.testi-description {
+  font-size: 1.5rem;
+}
+
+.testi-signature {
+  font-size: 1rem;
+}
+
+/* Tesimonials end */
