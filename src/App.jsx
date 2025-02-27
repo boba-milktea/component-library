@@ -8,6 +8,8 @@ function App() {
   return (
     <main>
       <h1>Component Library</h1>
+
+      {/* ====================== Bades ====================== */}
       <h2>Badges</h2>
       <section className="badge-section">
         <div class="square-badges">
@@ -63,6 +65,8 @@ function App() {
           </Badge>
         </div>
       </section>
+
+      {/* ====================== Banners ====================== */}
       <h2>Banners</h2>
       <section className="banner-section">
         <div className="banner-container-multiline">
@@ -161,6 +165,8 @@ function App() {
           </Banner>
         </div>
       </section>
+
+      {/* ====================== Cards ====================== */}
       <h2>Cards</h2>
       <section className="card-section">
         <Card>
@@ -174,6 +180,8 @@ function App() {
           </Card.Text>
         </Card>
       </section>
+
+      {/* ====================== Testimonials ====================== */}
       <h2>Testimonials</h2>
       <section className="testimonials">
         <Testimonials>
