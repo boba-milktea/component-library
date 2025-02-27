@@ -96,18 +96,19 @@ span {
   gap: 2em;
 }
 
-.banner {
+.multiline,
+.singleline {
   width: 56em;
   padding: 1em;
   display: flex;
-  align-items: flex-start;
   border-radius: 6px;
 }
 
-.banner .icon {
+.multiline .icon,
+.singleline .icon {
   display: block;
-  height: 2em;
-  width: 2em;
+  height: 0.75em;
+  width: 0.75e;
 }
 
 .icon img {
@@ -115,7 +116,8 @@ span {
   display: block;
 }
 
-.banner .information {
+.multiline .text-container,
+.singleline .text-container {
   width: 59em;
   font-family: "inter", sans-serif;
   display: flex;
@@ -126,8 +128,10 @@ span {
   margin-left: 0.875em;
 }
 
-.banner .information h3,
-.banner .information p {
+.multiline .text-container h3,
+.multiline .text-container p,
+.singleline .text-container h3,
+.singleline .text-container p {
   margin: 0;
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function BannerText({ children }) {
+export default function BannerDescription({ children }) {
   return <p>{children}</p>;
 }
