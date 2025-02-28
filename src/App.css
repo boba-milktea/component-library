@@ -1,13 +1,51 @@
 #root {
-  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Permanent Marker", sans-serif;
+}
+
+h1 {
+  font-size: 4vw;
+}
+h2 {
+  font-size: 3vw;
+}
+
+h3 {
+  font-size: 2vw;
+  margin: 0;
+}
+
+.container {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 80%;
+  margin-bottom: 1em;
 }
 
 /* badge start */
@@ -21,14 +59,13 @@ h2 {
 
 .square-badges,
 .pill-badges {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1em;
 }
 
 span {
-  display: block;
   padding: 0.5em 1.5em;
-  font-family: "Inter", sans-serif;
   font-size: 0.87rem;
 }
 
@@ -86,6 +123,7 @@ span {
 
 .banner-section {
   display: flex;
+  flex-direction: column;
   gap: 1em;
 }
 
@@ -93,12 +131,13 @@ span {
 .banner-container-singleline {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  align-items: center;
+  gap: 1em;
 }
 
 .multiline,
 .singleline {
-  width: 56em;
+  width: 80%;
   padding: 1em;
   display: flex;
   border-radius: 6px;
@@ -118,7 +157,6 @@ span {
 
 .multiline .text-container,
 .singleline .text-container {
-  width: 59em;
   font-family: "inter", sans-serif;
   display: flex;
   text-align: start;
@@ -128,9 +166,9 @@ span {
   margin-left: 0.875em;
 }
 
-.multiline .text-container h3,
+.multiline .text-container h4,
 .multiline .text-container p,
-.singleline .text-container h3,
+.singleline .text-container h4,
 .singleline .text-container p {
   margin: 0;
 }
@@ -138,11 +176,12 @@ span {
 /* banner end */
 
 /* card start */
+
 .card {
   height: 13em;
-  width: 24em;
+  max-width: 24em;
   background-color: #f9fafb;
-  margin: 0 auto;
+  margin: 2em auto;
   border-radius: 8px;
   position: relative;
   display: flex;
@@ -173,7 +212,7 @@ span {
 }
 
 .card-text {
-  width: 21em;
+  max-width: 21em;
   font-size: 1rem;
   color: #6b7280;
   margin-top: 1.25em;
@@ -185,42 +224,48 @@ span {
 /* Tesimonials start */
 
 .testimonial-card {
-  width: 84.875em;
-  height: 25em;
-  padding: 0 4em;
+  width: 376px;
+  height: 654px;
+  margin: 2em auto;
   background-color: #2545b8;
   color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1em;
-}
-
-.testi-image {
-  width: 24em;
-  height: 29em;
+  justify-content: space-around;
   position: relative;
 }
 
+.testi-image {
+  width: 344px;
+  height: 206px;
+  border-radius: 0.8em;
+  position: absolute;
+  top: -5em;
+  left: 1em;
+}
+
 .testi-image img {
+  display: block;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 1em;
-  left: 0;
+  border-radius: inherit;
 }
 
 .testi-text {
+  font-family: "Inter";
   display: flex;
-  gap: 1em;
   flex-direction: column;
   align-items: start;
   text-align: left;
-  width: 50em;
   margin-left: 1em;
+  padding: 0 0.6em;
 }
 
 .testi-description {
   font-size: 1.5rem;
+  padding-right: 1em;
+  margin: 1em 0;
 }
 
 .testi-signature {
@@ -228,3 +273,30 @@ span {
 }
 
 /* Tesimonials end */
+
+@media screen and (min-width: 1280px) {
+  .multiline,
+  .singleline {
+    width: 896px;
+  }
+
+  .testimonial-card {
+    width: 1358px;
+    height: 400px;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .testi-image {
+    width: 384px;
+    height: 464px;
+    top: -1em;
+    left: 2em;
+  }
+
+  .testi-text {
+    margin-left: 28em;
+    margin-right: 8em;
+  }
+}
